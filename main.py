@@ -22,7 +22,6 @@ import torch
 # ------------------------------------------------------------
 loader = TextLoader("data.txt", encoding="utf-8")
 documents = loader.load()
-st.sidebar.success("✅ data.txt loaded successfully!")
 
 # ------------------------------------------------------------
 # 2. Split into Chunks
@@ -130,4 +129,3 @@ if st.button("🗑️ Clear Chat History"):
     st.session_state.messages = []
     st.rerun()
 
-st.sidebar.info("📁 data.txt file same folder mein honi chahiye")
